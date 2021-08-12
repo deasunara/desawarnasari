@@ -1,7 +1,11 @@
-export default function UserDetail() {
+import Layout from "components/layout";
+
+export default function Users() {
   return (
     <div>
-      <p>user detail</p>
+      <Layout>
+        <p>user detail</p>
+      </Layout>
     </div>
   );
 }

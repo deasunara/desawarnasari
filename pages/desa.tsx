@@ -1,9 +1,11 @@
-import styles from '../styles/Home.module.css';
+import Layout from "/components/layout";
 
 export default function desa() {
   return (
     <div>
-      <p className={styles['title-homepage']}>selamat datang di desa warnasari</p>
+      <Layout>
+        <p className="home-page">selamat datang di desa warnasari</p>
+      </Layout>
     </div>
   );
 }
