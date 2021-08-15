@@ -1,17 +1,12 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title> nextJs Basic | Home page</title>
-        <meta name="description" content="Website NextJs Basic" />
-      </Head>
-      <Layout>
-        <h1 className={styles['title-homepage']}> Selamat datang dea sunara</h1>
-      </Layout>
-    </>
+    <Layout PageTitle="Home Page">
+      <Image src="/A4.png" width={200} height={200} />
+      <h1 className={styles['title-homepage']}> Selamat datang dea sunara</h1>
+    </Layout>
   );
 }

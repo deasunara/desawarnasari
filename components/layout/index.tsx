@@ -6,14 +6,17 @@ import styles from './layout.module.css';
 
 interface LayoutProps {
     children: ReactNode;
-    pageTitle: string;
+    PageTitle: string;
 }
 export default function Layout(props: LayoutProps) {
-  const { children, pageTitle } = props;
+  const { children, PageTitle } = props;
   return (
     <>
       <Head>
-        <title>NextJs Basic | Home Page</title>
+        <title>
+          NextJs Basic |
+          {PageTitle}
+        </title>
         <meta name="description" content="Warnasari"/>
       </Head>
       <div className={styles.container}>
