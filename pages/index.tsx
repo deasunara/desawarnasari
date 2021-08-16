@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <Layout PageTitle="Home Page">
-      <Image src="/A4.png" width={200} height={200} />
+      <Image src="/A4.png" width={200} height={200} alt="Profile" />
       <h1 className={styles['title-homepage']}> Selamat datang dea sunara</h1>
     </Layout>
   );
